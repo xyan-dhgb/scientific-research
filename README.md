@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-Dự án này tập trung vào [...]. Mục tiêu chính của dự án là [...]. Chúng tôi sử dụng [...] để thực hiện các phân tích và thử nghiệm liên quan.
+Repo này tập trung vào nghiên cứu cơ bản AI, ML và cách thức triển khai. Mục tiêu chính của dự án là tạo hệ thống dự đoán bệnh trong SmartHealth (y tế thông minh). Chúng tôi sử dụng các công nghệ đám mây (trong quá trình thực hiện sẽ phát sinh các công nghệ mới), ngôn ngữ lập trình Python và thư viện liên quan để thực hiện các phân tích và thử nghiệm hệ thống.
 
 ## Mục tiêu
 - [Mục tiêu 1]
@@ -46,11 +46,13 @@ cd your-repo
 - Push nhánh (git push origin feature-name)
 - Tạo pull request
 
-Tác giả
-[Tên bạn] - [Thông tin liên lạc]
-Liên hệ
+## Tác giả
 
-Nếu bạn có bất kỳ câu hỏi nào về dự án, vui lòng liên hệ với chúng tôi qua email [địa chỉ email] hoặc tạo issue trên GitHub.
+@andreafletcherdinh - 22520101@gm.uit.edu.vn
+
+@22520117Bao - 22520117@gm.uit.edu.vn
+
+Nếu bạn có bất kỳ câu hỏi nào về dự án, vui lòng liên hệ với chúng tôi qua một trong các email trên hoặc tạo issue trên GitHub.
 
 ## License
 Dự án này sử dụng giấy phép [Tên giấy phép]. Xem thêm chi tiết tại file LICENSE.
