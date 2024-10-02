@@ -8,7 +8,9 @@
 
 ### Narrow AI - Trí tuệ nhân tạo hẹp
 
-`Narrow AI` - trí tuệ nhân tạo hẹp hay còn gọi là AI yếu, là dạng trí tuệ nhân tạo chỉ tập trung vào một số nhiệm vụ và **không thể thực hiện vượt quá giới hạn** của nó
+* `Narrow AI` - trí tuệ nhân tạo hẹp hay còn gọi là AI yếu, là dạng trí tuệ nhân tạo chỉ tập trung vào một số nhiệm vụ và **không thể thực hiện vượt quá giới hạn** của nó
+
+* 
 
 
 
