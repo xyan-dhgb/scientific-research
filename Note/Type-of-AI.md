@@ -6,23 +6,23 @@
 
 2. [Phân loại theo khả năng](#phân-loại-theo-khả-năng)
 
-   3. [Narrow AI](#narrow-ai---trí-tuệ-nhân-tạo-hẹp)
+   * [Narrow AI](#narrow-ai---trí-tuệ-nhân-tạo-hẹp)
 
-   4. [General AI](#general-ai---trí-tuệ-nhân-tạo-tổng-hợp)
+   * [General AI](#general-ai---trí-tuệ-nhân-tạo-tổng-hợp)
 
-   5. [Super AI](#super-ai---siêu-trí-tuệ-nhân-tạo)
+   * [Super AI](#super-ai---siêu-trí-tuệ-nhân-tạo)
 
-   6. [So sánh Narrow AI, General AI và Super AI](#so-sánh-narrow-ai-general-ai-và-super-ai)
+   * [So sánh Narrow AI, General AI và Super AI](#so-sánh-narrow-ai-general-ai-và-super-ai)
 
 7. [Phân loại theo chức năng](#phân-loại-theo-chức-năng)
 
-   8. [Reactive Machine](#reactive-machine---bộ-máy-phản-ứng)
+   * [Reactive Machine](#reactive-machine---bộ-máy-phản-ứng)
 
-   9. [Limited Memory](#limited-memory---bộ-nhớ-hạn-chế)
+   * [Limited Memory](#limited-memory---bộ-nhớ-hạn-chế)
 
-   10. [Theory-of-mind - ToM](#theory---of---mind---tom)
+   * [Theory-of-mind - ToM](#theory---of---mind---tom)
 
-   11. [Self-aware](#self-aware---tự-nhận-thức)
+   * [Self-aware](#self-aware---tự-nhận-thức)
 
 12. [Tham khảo](#tham-khảo)
 
