@@ -1,4 +1,4 @@
-# Nghiên cứu Khoa học - TÌM HIỂU CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO (Artificial Intelligence - AI) và HỌC MÁY (Machine Learning - ML) 
+# NGHIÊN CỨU KHOA HỌC - TÌM HIỂU CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO (Artificial Intelligence - AI) và HỌC MÁY (Machine Learning - ML) 
 
 ## Giới thiệu
 
