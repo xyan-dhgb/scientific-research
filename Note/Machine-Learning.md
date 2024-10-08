@@ -212,3 +212,13 @@
     + Bảo vệ thông tin cá nhân của các bệnh nhân.
     
     + Tiếp cận dịch vụ y tế ngay tại nhà mà không cần đến bệnh viện, cực kì hữu ích cho người dân ở vùng xa hoặc những người có khó khăn trong việc di chuyển.
+
+## Các trang học tập tham khảo
+
+* https://www.youtube.com/watch?v=WgtTRwYwrJI&list=PLZEIt444jqpBPoqtW2ARJp9ICnF3c7vJC&ab_channel=SonNguyen
+
+* https://machinelearningcoban.com/2016/12/26/introduce/
+
+* https://mlsysbook.ai/contents/introduction/introduction.html?fbclid=IwY2xjawFhqrtleHRuA2FlbQIxMAABHUGV7QmxoMOigRDySs3LXhhkJWsgv4tB4WVM4Vj49gVUAjL5zvAH1jz2Ow_aem_lhdw_LG4DRaBC5PQtz8BmA
+
+* https://www.coursera.org/programs/nic-x-uit-3-revb1/professional-certificates/google-it-automation?collectionId=JsnkQ
