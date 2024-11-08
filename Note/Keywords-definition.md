@@ -5,9 +5,6 @@
 ### Định nghĩa: 
 
 
-
-dgfgf
-
 **Internet Vạn Vật**, là một mạng lưới kết nối các thiết bị vật lý, từ những vật dụng đơn giản như bóng đèn, ổ khóa thông minh cho đến các thiết bị phức tạp như xe tự lái, máy móc công nghiệp. Những thiết bị này được trang bị cảm biến, kết nối internet và có khả năng thu thập, trao đổi dữ liệu.
 	
 ### Đối tượng sử dụng:
@@ -402,4 +399,3 @@ https://cmccloud.vn/tin-tuc/sdn-la-gi
 https://fptshop.com.vn/tin-tuc/danh-gia/nfv-la-gi-183214 
 
 https://vnpro.vn/tin-tuc sdn-va-nfv-xac-dinh-hai-khia-canh-khac-nhau-trong-tuong-lai-cua-mang-4744.html
-
