@@ -15,10 +15,11 @@ print(house_data.columns)
 
 house_data = house_data.dropna(axis=0)
 
-y = house_data.Price
+# Choose Target
+y = house_data.Price 
 
+# Choose features and assign to x
 house_features = ['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude']
-
 x = house_data[house_features]
 
 x.describe()
