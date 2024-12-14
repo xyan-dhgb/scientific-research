@@ -106,6 +106,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 - Hệ thống lái xe tự động
 - Mạng xã hội
 - Phân tích cảm xúc
+- ... 
 
 ## Có nên sử dụng Deep Learning thay cho Machine Learning?
 
