@@ -1,4 +1,4 @@
-# TỔNG QUAN VỀ DEEP LEARNING (HỌC SÂU)
+# <center>TỔNG QUAN VỀ DEEP LEARNING (HỌC SÂU) </center>
 Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách hoạt động của não bộ con người để xử lý dữ liệu, tạo ra các mẫu để sử dụng cho việc đưa ra quyết định.
 
 ## Mục lục
