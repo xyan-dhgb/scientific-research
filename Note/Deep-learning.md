@@ -75,18 +75,47 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Có 2 loại ANN:    
     
-    - FeedForward ANN:
+    - *FeedForward ANN:*
 
         * Chỉ gồm luồng thông tin 1 chiều, khong xuất hiện vòng phản hồi (gửi ngược thông tin về lại). Mô hình này được sử dụng để nhận dạng một mẫu cụ thể, vì chúng chứa các đầu vào và ra cố định
 ![FeedForwar ANN](/Asset/Image/FeedForward-ANN.png)
 
-    - FeedBack ANN:
+    - *FeedBack ANN:*
 
         * Cho phép các vòng lặp phản hồi. Sử dụng mô hình này trong các bộ nhớ có thể giải quyết nội dung.
 ![FeedBack ANN](/Asset/Image/FeedBack-ANN.png)
 
-
 ### Convolutional Neural Network (CNN)
+
+- Đây là một kiến trúc Neural Network nhân tạo nâng cao, dùng để giải quyết các bài toán phức tạp, đặc biệt là **phân biệt hình ảnh**
+
+- Tích chập là một khái niệm quan trọng trong việc xử lý thông tin đầu vào thông qua một phép tính gọi là phép tích chập (khác với tương quan chéo) với bộ lọc, nhằm trả về đầu ra là một tín hiệu mới.
+
+- Bên cạnh input và output layer, mô hình CNN còn có thêm một **Sampling Layer** để giới hạn số lượng nơ-ron tham gia vào các layer tương ứng.
+
+- Việc xây dựng mô hình này trải qua 3 giai đoạn chính:
+
+![CNN layer](/Asset/Image/cnn-layer.webp)
+
+   - *Convolution (Quá trình tích chập)*: Đây là phép toán dùng trong xử lý ảnh với thuật toán **cửa sổ trượt** (sliding window). Hình ảnh bên trái mô tả một ma trận đầu vào (Image, dựa trên phân giải hình ảnh, máy tính sẽ thấy HH x W x D (H: Chiều cao, W: Chiều rộng, D: Độ dày)) và hình bên phải là kết quả ma trận đặc trưng (Convolved Feature) sau khi áp dụng phép tích chập.
+        - Ý nghĩa: **Trích xuất đặc trưng** từ ảnh đầu vào (Convolved feature)
+
+![Phép tích chập](/Asset/Image/Convolution_schematic.gif)
+
+![Công thức phép toán tích chập](/Asset/Image/convolution-calculating.webp)
+
+   - *Max pooling (Quá trình tổng hợp, thủ tục tìm ra giá trị lớn nhất)*: Ngay sau lớp Convolution, Pooling layer có nhiệm vụ giảm kích thước khối ma trận đầu vào thông qua việc tìm ra một giá trị đại diện cho mỗi một vùng không gian mà filter đi qua sẽ không làm thay đổi các đường nét chính của bức ảnh nhưng lại giảm được kích thước của ảnh. (Pooling size: thường là 2x2 hoặc 4xx4 cho ảnh đầu vào lớn)
+     - Trong một mạng CNN có nhiều Feature Map nên mỗi Feature Map chúng ta sẽ cho mỗi Max Pooling khác nhau. Chúng ta có thể thấy rằng Max Pooling là cách hỏi xem trong các đặc trưng này thì đặc trưng nào là đặc trưng nhất. Ngoài Max Pooling còn có L2 Pooling.
+
+![pooling layer](/Asset/Image/pooling-layer.png)
+
+   - *Full connected (Quá trình kết nối hoàn toàn)*: Sau khi giảm kích thước đến một mức độ nhất định. ma trận cần được làm phẳng (flatten) thành một vector và sử dụng fully connected giữa các tầng. Fully connected layer sẽ có **số lượng đơn vị bằng với số lớp**.
+
+- Cách chọn tham số cho CNN:
+    - *Số các convolution layer*: càng nhiều các convolution layer thì performance càng được cải thiện. Sau khoảng 3 hoặc 4 layer, các tác động được giảm một cách đáng kể
+    - *Filter size*: thường filter theo size 5x5 hoặc 3x3
+    - *Pooling size*: thường là 2x2 hoặc 4x4 cho ảnh đầu vào lớn
+    - Cách cuối cùng là thực hiện nhiều lần việc train test để chọn ra được param tốt nhất.
 
 ### Recurrent Neural Network (RNN)
 
@@ -117,3 +146,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 https://vietnix.vn/deep-learning-la-gi/#cac-ky-thuat-deep-learning
 
 https://viettelidc.com.vn/tin-tuc/cam-nang-ai-artificial-neural-network-la-gi-cau-truc-cach-hoat-dong-va-ung-dung-cua-mo-hinh-nay
+
+https://topdev.vn/blog/thuat-toan-cnn-convolutional-neural-network/#cnn-convolutional-neural-network-la-gi
+
+https://viblo.asia/p/deep-learning-tim-hieu-ve-mang-tich-chap-cnn-maGK73bOKj2
