@@ -91,14 +91,26 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Tích chập là một khái niệm quan trọng trong việc xử lý thông tin đầu vào thông qua một phép tính gọi là phép tích chập (khác với tương quan chéo) với bộ lọc, nhằm trả về đầu ra là một tín hiệu mới.
 
+- Sự khác nhau giữa Tích chập (Convolution và Cross - correlation):
+
+| Tính chất | Tích chập (Convolution) | Tương quan chéo (Cross-correlation) |
+|---|---|---|
+| Định nghĩa | Phép toán giữa hai hàm số, trong đó một hàm số (kernel) **được lật ngược** trước khi thực hiện tích phân hoặc tổng. | Phép toán giữa hai hàm số, trong đó một hàm số (kernel) **không được lật ngược.** |
+| Mục đích |  * Trích xuất **đặc trưng trong xử lý ảnh** (CNN) <br> * Mô hình hóa các hệ thống tuyến tính thời **bất biến** | * **Tìm kiếm** một mẫu cụ thể trong một tín hiệu lớn hơn |
+| Ứng dụng |  * Mạng nơ ron tích chập <br> * Xử lý tín hiệu (lọc, phân tích phổ) <br> * **Xử lý ảnh** (phát hiện cạnh, làm mờ) |  * **Xử lý tín hiệu** (tìm kiếm mẫu) <br> * Thị giác máy tính (so sánh hình ảnh) |
+| Kernel | **Được lật ngược** trước khi thực hiện phép toán | **Không được lật ngược** |
+| Tính chất giao hoán | Trong một số trường hợp, có tính giao hoán | Không có tính giao hoán |
+
 - Bên cạnh input và output layer, mô hình CNN còn có thêm một **Sampling Layer** để giới hạn số lượng nơ-ron tham gia vào các layer tương ứng.
 
 - Việc xây dựng mô hình này trải qua 3 giai đoạn chính:
 
 ![CNN layer](/Asset/Image/cnn-layer.webp)
 
-   - *Convolution (Quá trình tích chập)*: Đây là phép toán dùng trong xử lý ảnh với thuật toán **cửa sổ trượt** (sliding window). Hình ảnh bên trái mô tả một ma trận đầu vào (Image, dựa trên phân giải hình ảnh, máy tính sẽ thấy HH x W x D (H: Chiều cao, W: Chiều rộng, D: Độ dày)) và hình bên phải là kết quả ma trận đặc trưng (Convolved Feature) sau khi áp dụng phép tích chập.
+   - *Convolution (Quá trình tích chập)*: Đây là phép toán dùng trong xử lý ảnh với thuật toán **cửa sổ trượt** (sliding window hoặc kernel). Hình ảnh bên trái mô tả một ma trận đầu vào (Image, dựa trên phân giải hình ảnh, máy tính sẽ thấy HH x W x D (H: Chiều cao, W: Chiều rộng, D: Độ dày)) và hình bên phải là kết quả ma trận đặc trưng (Convolved Feature) sau khi áp dụng phép tích chập.
         - Ý nghĩa: **Trích xuất đặc trưng** từ ảnh đầu vào (Convolved feature)
+        - Image input + filter (feature detect) -> Convolved feature
+        - Trong xử lý truyền thông, kernel sẽ do người dùng định nghĩa. Trong trí tuệ nhân tạo, kernel sẽ được quyết định thông qua nhiều quá trình huấn luyện.
 
 ![Phép tích chập](/Asset/Image/Convolution_schematic.gif)
 
