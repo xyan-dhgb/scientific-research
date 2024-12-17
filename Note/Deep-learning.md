@@ -14,6 +14,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
     * [Deep Reinforcement Learning](#deep-reinforcement-learning)
     * [Autoencoder](#autoencoder)
     * [Backpropagation](#backpropagation)
+    * [Decent gradient](#decent-gradient)
 5. [Deep Learning giải quyết những vấn đề gì?](#deep-learning-giải-quyết-những-vấn-đề-gì)
 6. [Có nên sử dụng Deep Learning thay cho Machine Learning?](#có-nên-sử-dụng-deep-learning-thay-cho-machine-learning)
 
@@ -140,6 +141,8 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 ### Autoencoder
 
 ### Backpropagation
+
+### Decent gradient
 
 ## Deep Learning giải quyết những vấn đề gì?
 
