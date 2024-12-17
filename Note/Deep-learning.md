@@ -132,6 +132,16 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 ### Recurrent Neural Network (RNN)
 
+- Recurent Neural Network (RNN), có tên gọi trong tiếng Việt là Mạng nơ-ron hồi quy, là một thuật toán nổi tiếng trong lĩnh vực **xử lý ngôn ngữ tự nhiên**. 
+
+- Trong các mô hình mạng nơ-ron truyền thống, đầu vào và đầu ra độc lập với nhau, tuy nhiên **RNN thực hiện cùng một tác vụ cho tất cả phần tử của một chuỗi** với đầu ra phụ thuộc vào cả các phép tính trước đó. Vì vậy mạng **RNN có khả năng nhớ các thông tin được tính toán trước đó.**
+
+- Cách hoạt động của RNN: Quá trình xử lý dữ liệu, phân tích và dự đoán diễn ra trong **lớp ẩn**. 
+![Sơ đồ của RNN](/Asset/Image/rnn-schmatic.gif)
+
+    - *Lớp ẩn:* 
+
+
 ### Generative Adversarial Networks (GAN)
 
 ### Boltzmann machine
