@@ -139,8 +139,46 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 - Cách hoạt động của RNN: Quá trình xử lý dữ liệu, phân tích và dự đoán diễn ra trong **lớp ẩn**. 
 ![Sơ đồ của RNN](/Asset/Image/rnn-schmatic.gif)
 
-    - *Lớp ẩn:* 
+    - *Lớp ẩn:* RNN hoạt động bằng cách **truyền dữ liệu tuần tự nhận được đến các lớp ẩn**. Tuy nhiên, RNN cũng có quy trình làm việc **tự lặp lại** hay **hồi quy**: lớp ẩn có thể **ghi nhớ** và sử dụng các đầu vào trước đó cho các dự đoán trong tương lai trong một thành phần bộ nhớ ngắn hạn. Quy trình này sử dụng đầu vào hiện tại và bộ nhớ đã lưu trữ để dự đoán chuỗi tiếp theo.
 
+- RNN có hai thiết kế chính:
+    - *LSTM (Long Short-Term Memory)*: Được dùng để dự đoán dữ liệu **dạng chuỗi thời gian**, có khả năng bỏ đi hoặc thêm các thông tin cần thiết, được điều chỉnh bởi các nhóm được gọi là cổng (gate): Input, Output và Forget. Cách hoạt động:
+        - Cổng quên (Forget): Quyết định thông tin nào từ bộ nhớ cũ cần bỏ qua.
+        - Cổng vào (Input): Quyết định thông tin mới nào cần được thêm vào bộ nhớ.
+        - Cập nhật bộ nhớ (Cell State): Kết hợp thông tin cũ và thông tin mới để tạo ra bộ nhớ mới.
+        - Cổng ra (Output): Quyết định thông tin nào từ bộ nhớ sẽ được sử dụng để tính toán trạng thái ẩn hiện tại.
+![LSTM Architecture](/Asset/Image/lstm-architecture.png)
+
+    - *Gated recurrent units (GRUs)*: Cũng là một thiết kế phổ biến trong lĩnh vực dự đoán dữ liệu của chuỗi thời gian, có hai cổng là **Update và Reset.** Cách hoạt động:
+        - Cổng đặt lại (Reset Gate): Quyết định mức độ sử dụng thông tin từ trạng thái ẩn trước đó.
+        - Cổng cập nhật (Update Gate): Quyết định mức độ kết hợp thông tin mới và thông tin cũ để tạo ra trạng thái ẩn mới.
+        - Cập nhật trạng thái ẩn: Kết hợp thông tin từ trạng thái ẩn trước đó và trạng thái ứng viên để tạo ra trạng thái ẩn mới.
+
+- Bảng so sánh giữa LSTM và GRU:
+
+
+| Đặc điểm | GRU (Gated Recurrent Unit) | LSTM (Long Short-Term Memory) |
+|---|---|---|
+| **Số cổng** | 2 cổng: Cổng cập nhật (update gate) và cổng đặt lại (reset gate) | 3 cổng: Cổng vào (input gate), cổng quên (forget gate) và cổng ra (output gate) |
+| **Bộ nhớ bên trong** | Không có bộ nhớ bên trong riêng biệt | Có bộ nhớ bên trong (cell state) c<sub>t</sub> |
+| **Cơ chế hoạt động** | Sử dụng cổng cập nhật để điều khiển việc kết hợp trạng thái ẩn trước đó và trạng thái ẩn hiện tại. Cổng đặt lại quyết định mức độ bỏ qua trạng thái ẩn trước đó. | Sử dụng cổng quên để quyết định thông tin nào cần giữ lại từ bộ nhớ bên trong. Cổng vào quyết định thông tin mới nào được lưu vào bộ nhớ bên trong. Cổng ra quyết định thông tin nào từ bộ nhớ bên trong được đưa ra làm trạng thái ẩn hiện tại. |
+| **Số lượng tham số** | Ít hơn LSTM | Nhiều hơn GRU |
+| **Khả năng tính toán** | Tính toán nhanh hơn LSTM | Tính toán chậm hơn GRU |
+| **Hiệu suất** | Thường có hiệu suất tương đương với LSTM trong nhiều bài toán. Đôi khi hoạt động tốt hơn LSTM trong các bài toán với dữ liệu ít hoặc cần tốc độ xử lý nhanh. | Thường đạt hiệu suất tốt hơn GRU trong các bài toán phức tạp với lượng dữ liệu lớn. |
+| **Độ phức tạp** | Đơn giản hơn LSTM | Phức tạp hơn GRU |
+| **Ưu điểm** | Đơn giản, tính toán nhanh, ít tham số, phù hợp với dữ liệu nhỏ và yêu cầu tốc độ xử lý. | Mạnh mẽ trong việc xử lý các chuỗi dài, khả năng ghi nhớ thông tin tốt hơn, phù hợp với các bài toán phức tạp và dữ liệu lớn. |
+| **Nhược điểm** | Khả năng ghi nhớ thông tin trong chuỗi dài có thể kém hơn LSTM trong một số trường hợp. | Phức tạp, tính toán chậm hơn, nhiều tham số hơn. |
+
+- Ngoài ra còn 1 thiết kế nữa là *Bidirectional Recurrent Neural Network (BRNN)*: Xử lý các chuỗi dữ liệu với các lớp tiến và lùi của các nút ẩn.
+    - Lớp tiến (forward layer) hoạt động tương tự như RNN, lưu trữ đầu vào trước đó ở trạng thái ẩn và sử dụng đầu vào đó để dự đoán đầu ra tiếp theo.
+    - Lớp lùi (backward layer) hoạt động theo hướng ngược lại bằng cách lấy cả đầu vào hiện tại và trạng thái ẩn trong tương lai để cập nhật trạng thái ẩn hiện tại.
+
+- Các dạng bài toán RNN:
+    - One to One: Chỉ một input kết nối với một output duy nhất, chẳng hạn như phân loại hình ảnh.
+    - One to Many: Một input nhưng cho ra nhiều input, phổ biến là bài toán đặt caption cho ảnh.
+    - Many to One: Nhiều input nhưng chỉ cho ra một Output, ví dụ phân loại cảm xúc.
+    - Many to Many: Nhiêu input và nhiều output, chẳng hạn như phân loại video.
+![Các bài tóan RNN](/Asset/Image/rnn-math-problem.webp)
 
 ### Generative Adversarial Networks (GAN)
 
