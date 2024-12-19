@@ -184,7 +184,9 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Generative Adversarial Network (GAN), hay có tên gọi trong tiếng Việt là **mạng sinh đối kháng** là một dạng mạng nơ-ron thuộc nhóm Generative Model. 
 
-- Đây là lớp mô hình có mục tiêu tạo ra dữ liệu giả giống dữ liệu thật, tên của mạng được dựa trên 2 mục tiêu đối nghịch nhau: Generator và Discriminator. Trong đó, Generator học cách sinh dữ liệu giả để lừa mô hình Discriminator, còn Discriminator lại học cách phân biệt giữa dữ liệu giả và dữ liệu thật
+- Đây là lớp mô hình có mục tiêu tạo ra dữ liệu giả giống dữ liệu thật, tên của mạng được dựa trên 2 mục tiêu đối nghịch nhau: Generator và Discriminator. Trong đó, Generator học cách sinh dữ liệu giả để lừa mô hình Discriminator, còn Discriminator lại học cách phân biệt giữa dữ liệu giả và dữ liệu thật.
+
+![GAN](/Asset/Image/GAN.webp)
 ### Boltzmann machine
 
 ### Deep Reinforcement Learning 
