@@ -17,6 +17,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
     * [Decent gradient](#decent-gradient)
 5. [Deep Learning giải quyết những vấn đề gì?](#deep-learning-giải-quyết-những-vấn-đề-gì)
 6. [Có nên sử dụng Deep Learning thay cho Machine Learning?](#có-nên-sử-dụng-deep-learning-thay-cho-machine-learning)
+7. [Môi trường huấn luyện](#môi-trường-huấn-luyện)
 
 ## Deep Learning là gì?
 
@@ -187,7 +188,10 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 - Đây là lớp mô hình có mục tiêu tạo ra dữ liệu giả giống dữ liệu thật, tên của mạng được dựa trên 2 mục tiêu đối nghịch nhau: Generator và Discriminator. Trong đó, Generator học cách sinh dữ liệu giả để lừa mô hình Discriminator, còn Discriminator lại học cách phân biệt giữa dữ liệu giả và dữ liệu thật.
 
 ![GAN](/Asset/Image/GAN.webp)
+
 ### Boltzmann machine
+
+
 
 ### Deep Reinforcement Learning 
 
@@ -208,6 +212,14 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 ## Có nên sử dụng Deep Learning thay cho Machine Learning?
 
 - Phụ thuộc phần lớn vào mục tiêu và chiến lược kinh doanh cụ thể, số lượng dữ liệu, tài nguyên,… 
+- Ngoài ra, còn dựa vào điều kiện dữ liệu có lớn hay không, model có nặng hay không.
+
+## Môi trường huấn luyện
+
+- Máy tính cá nhân
+- Google Collab
+- ai.uitiot.vn
+- A100
 
 ## Trang web tham khảo:
 
