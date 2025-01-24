@@ -4,6 +4,8 @@ From the paper: [Federated-Learning-for-Smart-Healthcare-A Survey.pdf](/Paper/Fe
 
 ## What is FL?
 
+Federated Learning (FL) is a distributed artificial intelligence (AI) approach that enables the training of high-quality AI models by **averaging local updates aggregated from multiple clients**, such as hospitals or Internet of Medical Things (IoMT) devices, without needing direct access to the raw data. This approach is particularly attractive for smart healthcare because it can coordinate multiple clients to perform AI training without sharing sensitive raw data
+
 ## Features of FL
 
 ## How does it work?
