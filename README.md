@@ -1,13 +1,13 @@
-# NGHIÊN CỨU KHOA HỌC - TÌM HIỂU CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO (Artificial Intelligence - AI) và HỌC MÁY (Machine Learning - ML) 
+# NGHIÊN CỨU KHOA HỌC - TÌM HIỂU CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO (ARTIFICIAL INTELLIGENCE- AI), HỌC MÁY (MACHINE LEARNING - ML) VÀ HỌC SÂU (DEEP LEARNING)
 
 ## Giới thiệu
 
 Repo này tập trung vào nghiên cứu cơ bản AI, ML và cách thức triển khai. Mục tiêu chính của dự án là tạo hệ thống dự đoán bệnh trong SmartHealth (y tế thông minh). Chúng tôi sử dụng các công nghệ đám mây (trong quá trình thực hiện sẽ phát sinh các công nghệ mới), ngôn ngữ lập trình Python và thư viện liên quan để thực hiện các phân tích và thử nghiệm hệ thống.
 
 ## Mục tiêu
-- [Mục tiêu 1]
-- [Mục tiêu 2]
-- [Mục tiêu 3]
+- Xác định được bài toán và phương pháp thực hiện nhằm phục vụ cho Đồ án chuyên ngành (NT114) và Khóa luận tốt nghiệp (NT505).
+- Hiểu được kiến thức cơ bản về AI cũng như các phương pháp triển khai FL.
+- Tìm được các bộ datasets uy tín và đạt được kết quả mong muốn
 
 ## Cấu trúc dự án
 
