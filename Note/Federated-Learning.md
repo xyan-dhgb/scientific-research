@@ -6,6 +6,8 @@ From the paper: [Federated-Learning-for-Smart-Healthcare-A Survey.pdf](/Paper/Fe
 
 Federated Learning (FL) is a distributed artificial intelligence (AI) approach that enables the training of high-quality AI models by **averaging local updates aggregated from multiple clients**, such as hospitals or Internet of Medical Things (IoMT) devices, without needing direct access to the raw data. This approach is particularly attractive for smart healthcare because it can coordinate multiple clients to perform AI training without sharing sensitive raw data
 
+---
+
 ## Features of FL
 
 ## How does it work?
@@ -36,6 +38,8 @@ Federated Transfer Learning (FTL) is designed to handle datasets with **differen
 - Train local datasets based on the transformed feature representation.
 
 By leveraging these types of FL, smart healthcare systems can enhance collaboration across distributed data sources while maintaining data privacy and security.
+
+---
 
 ## What are some FL designs?
 
