@@ -55,4 +55,4 @@ cd your-repo
 Nếu bạn có bất kỳ câu hỏi nào về dự án, vui lòng liên hệ với chúng tôi qua một trong các email trên hoặc tạo issue trên GitHub.
 
 ## License
-Dự án này sử dụng giấy phép [Tên giấy phép]. Xem thêm chi tiết tại file LICENSE.
+Dự án này sử dụng giấy phép Apache License 2.0. Xem thêm chi tiết tại file LICENSE.
