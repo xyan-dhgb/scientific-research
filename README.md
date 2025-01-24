@@ -11,7 +11,22 @@ Repo này tập trung vào nghiên cứu cơ bản AI, ML và cách thức tri�
 
 ## Cấu trúc dự án
 
-[Update later]
+
+| Tên thư mục/tập tin | Miêu tả                          |
+|---------------------|----------------------------------|
+| `Asset`             | Chứa tài nguyên                 |
+|     `Image`         | Tài nguyên ảnh                  |
+|     `SVG`           | Tài nguyên SVG                  |
+| `Dataset`           | Lưu trữ tập dữ liệu             |
+| `Note`              | Ghi chú và tài liệu             |
+|     `Documentation` | Tài liệu đọc thêm               |
+| `Paper`             | Bài báo nghiên cứu              |
+| `Report`            | Báo cáo                         |
+| `Task`              | Quản lý công việc               |
+| `.gitignore`        | Bỏ qua cấu hình không cần thiết |
+| `LICENSE`           | Giấy phép                       |
+| `README.md`         | Tổng quan về dự án              |
+
 
 
 ## Cách cài đặt và sử dụng
