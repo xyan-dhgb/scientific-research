@@ -98,4 +98,6 @@ These FL designs are not mutually exclusive and can be combined to create robust
 
 By adopting these advanced FL designs, smart healthcare systems can achieve efficient, secure, and personalized solutions while maintaining data privacy and addressing resource limitations.
 
+---
+
 ## Keyword
