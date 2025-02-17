@@ -12,22 +12,19 @@ Repo này tập trung vào nghiên cứu cơ bản AI, ML và cách thức tri�
 ## Cấu trúc dự án
 
 
-| Tên thư mục/tập tin | Miêu tả                          |
-|---------------------|----------------------------------|
-| `Asset`             | Chứa tài nguyên                 |
-|     `Image`         | Tài nguyên ảnh                  |
-|     `SVG`           | Tài nguyên SVG                  |
-| `Dataset`           | Lưu trữ tập dữ liệu             |
-| `Note`              | Ghi chú và tài liệu             |
-|     `Documentation` | Tài liệu đọc thêm               |
-| `Paper`             | Bài báo nghiên cứu              |
-| `Report`            | Báo cáo                         |
-| `Task`              | Quản lý công việc               |
-| `.gitignore`        | Bỏ qua cấu hình không cần thiết |
-| `LICENSE`           | Giấy phép                       |
-| `README.md`         | Tổng quan về dự án              |
-
-
+```
+📂 Asset
+ ├── 📂 Image
+ ├── 📂 SVG
+📂 Note
+ ├── 📂 Documentation
+📂 Paper
+📂 Report
+📂 Task
+📄 .gitignore
+📄 LICENSE
+📄 README.md
+```
 
 ## Cách cài đặt và sử dụng
 
@@ -43,17 +40,11 @@ cd your-repo
 
 ```
 
-## Hướng dẫn sử dụng
-[Hướng dẫn sử dụng cụ thể] 
-
-[Hướng dẫn chạy các file/notebook]
-
 ## Kết quả
 [Mô tả các kết quả chính của nghiên cứu]
 
-[Liên kết đến các kết quả hoặc bài viết khoa học liên quan]
 
-Đóng góp cuả Ccúng tôi luôn hoan nghênh các đóng góp từ cộng đồng. Nếu bạn muốn đóng góp, hãy thực hiện theo các bước sau:
+Đóng góp của chúng tôi luôn hoan nghênh các đóng góp từ cộng đồng. Nếu bạn muốn đóng góp, hãy thực hiện theo các bước sau:
 
 - Fork dự án
 - Tạo một nhánh mới (git checkout -b feature-name)
