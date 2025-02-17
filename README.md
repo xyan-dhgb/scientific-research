@@ -37,7 +37,6 @@ cd your-repo
 
 # Cài đặt các thư viện cần thiết
 [Update later]
-
 ```
 
 ## Kết quả
