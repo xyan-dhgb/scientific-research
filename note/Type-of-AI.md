@@ -32,7 +32,6 @@
 
 ## Phân loại theo khả năng
 
-![3 stages of AI](/Asset/Image/3-stages-of-AI.png)
 
 ### Narrow AI - Trí tuệ nhân tạo hẹp
 
@@ -44,7 +43,6 @@
 
 - Ví dụ: Apple Siri, Google Dịch, các phần mềm nhận dạng ảnh, ...
 
-![Narrow AI](/Asset/Image/narrow-ai.png)
 
 ### General AI - Trí tuệ nhân tạo tổng hợp
 
@@ -54,7 +52,6 @@
 
 Vd: ChatGPT
 
-![General AI](/Asset/Image/general-ai.webp)
 
 ### Super AI - Siêu trí tuệ nhân tạo
 
@@ -64,7 +61,6 @@ Vd: ChatGPT
 
 - Hiện nay, sự tồn tại của loại AI này vẫn chỉ là **lý thuyết**, và một số người cho rằng tương lai sẽ trở nên đen tối nếu loại AI này trở thành sự thật. Đồng thời, nó cũng làm dấy lên những lo ngại về đạo đức AI và một số nguy cơ tiềm ẩn.
 
-![Super AI](/Asset/Image/super-ai.jpg)
 
 ### So sánh Narrow AI, General AI và Super AI
 
@@ -95,7 +91,6 @@ Vd: ChatGPT
 
   - Hỗ trợ trả lời tự động thông qua chatbot.
 
-![Reactive AI](/Asset/Image/reactive-ai.png)
 
 ### Limited Memory - Bộ nhớ hạn chế
 
@@ -107,7 +102,6 @@ Vd: ChatGPT
 
   - Hệ thống lái xe tự động không lưu toàn bộ dữ liệu của hành trình mà chỉ lưu các thông tin hạn chế như tốc độ hiện tại, vị trí và các thông tin về vật thể xung quanh.
 
-![Limited Memory](/Asset/Image/limited-memory-ai.jpg)
 
 ### Theory-of-mind - ToM
 
@@ -117,7 +111,6 @@ Vd: ChatGPT
 
 - Giúp các AI có thể tương tác hiệu quả với con người hơn.
 
-![Theory of mind](/Asset/Image/ToM.png)
 
 ### Self-aware - Tự nhận thức
 
@@ -125,7 +118,6 @@ Vd: ChatGPT
 
 - Tuy nhiên, đây chỉ là AI đang tồn tại trên lý thuyết. Hệ thống AI hiện có vẫn đang được nghiên cứu kỹ lưỡng và sẽ cần nhiều cải tiến đáng kể để đạt được mức độ tự nhận thức tương đương với con người. Các hệ thống AI tự nhận thức ngày nay đa phần chỉ có khả năng giới hạn trong việc tự nhận biết và hiểu về bản thân.
 
-![Self aware](/Asset/Image/self-aware.png)
 
 ### So sánh Reactive Machine, Limited Memory, Theory-of-mind, Self-aware
 
@@ -135,8 +127,6 @@ Vd: ChatGPT
 | **Limited Memory**   | - Có khả năng lưu trữ và sử dụng thông tin từ quá khứ trong một khoảng thời gian ngắn để đưa ra quyết định.                                 | Xe tự lái (Tesla)                    | Có                   | Không                                  | Không                  |
 | **Theory-of-mind**   | - Có khả năng hiểu được cảm xúc, ý định, và suy nghĩ của con người. <br> - Vẫn đang trong giai đoạn nghiên cứu, chưa được thực hiện đầy đủ. | Trí tuệ nhân tạo tương lai           | Có                   | Có                                     | Không                  |
 | **Self-aware**       | - Có khả năng tự nhận thức về bản thân, hiểu rõ chính mình và có ý thức như con người. <br> - Là mức độ AI cao nhất, hiện chưa đạt được.    | AI trong giả tưởng (Ex Machina, Her) | Có                   | Có                                     | Có                     |
-
-![Phân loại AI theo chức năng](/Asset/Image/ai-categories.png)
 
 ## Tham khảo
 

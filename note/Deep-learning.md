@@ -23,7 +23,6 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Deep Learning (DL) - học sâu, được xem là một lĩnh vực con của trí tuệ nhân tạo, ở đây, các máy tính **sẽ học và cải thiện chính nó thông qua các thuật toán**. Deep learning chủ yếu hoạt động với các **mạng nơ-ron nhân tạo** để bắt chước khả năng tư duy và suy nghĩ của con người.
 
-![Deep learning](/Asset/Image/deeplearning-la-gi.webp)
 
 - Mạng nơ-ron nhân tạo chính là động lực để phát triển DL. Mạng nơ-ron sâu (DNN) bao gồm nhiều lớp nơ-ron khác nhau, có khả năng thực hiện các phép tính phức tạp.
 
@@ -59,8 +58,6 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Mỗi nơ-ron sẽ có một **hàm kích hoạt** (Activation function), về cơ bản thì có nhiệm vụ “chuẩn hoá” đầu ra từ nơ-ron này. 
 
-![Layer của Deep Learning](/Asset/Image/dl-noron.webp)
-
 ## Kĩ thuật Deep Learning
 
 ### Artificial Neural Network (ANN - Mạng nơ-ron cổ điển)
@@ -73,19 +70,19 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Kiến trúc ANN tương đối đơn giản, phù hợp nhất với các bộ dữ liệu có **dạng bảng** hoặc **những bài toán phân loại, hồi quy** có đầu vào là **giá trị thực.**
 
-![ANN](/Asset/Image/ANN.png)
+
 
 - Có 2 loại ANN:    
     
     - *FeedForward ANN:*
 
         * Chỉ gồm luồng thông tin 1 chiều, khong xuất hiện vòng phản hồi (gửi ngược thông tin về lại). Mô hình này được sử dụng để nhận dạng một mẫu cụ thể, vì chúng chứa các đầu vào và ra cố định
-![FeedForwar ANN](/Asset/Image/FeedForward-ANN.png)
+
 
     - *FeedBack ANN:*
 
         * Cho phép các vòng lặp phản hồi. Sử dụng mô hình này trong các bộ nhớ có thể giải quyết nội dung.
-![FeedBack ANN](/Asset/Image/FeedBack-ANN.png)
+
 
 ### Convolutional Neural Network (CNN)
 
@@ -107,21 +104,19 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Việc xây dựng mô hình này trải qua 3 giai đoạn chính:
 
-![CNN layer](/Asset/Image/cnn-layer.webp)
+
 
    - *Convolution (Quá trình tích chập)*: Đây là phép toán dùng trong xử lý ảnh với thuật toán **cửa sổ trượt** (sliding window hoặc kernel). Hình ảnh bên trái mô tả một ma trận đầu vào (Image, dựa trên phân giải hình ảnh, máy tính sẽ thấy HH x W x D (H: Chiều cao, W: Chiều rộng, D: Độ dày)) và hình bên phải là kết quả ma trận đặc trưng (Convolved Feature) sau khi áp dụng phép tích chập.
         - Ý nghĩa: **Trích xuất đặc trưng** từ ảnh đầu vào (Convolved feature)
         - Image input + filter (feature detect) -> Convolved feature
         - Trong xử lý truyền thông, kernel sẽ do người dùng định nghĩa. Trong trí tuệ nhân tạo, kernel sẽ được quyết định thông qua nhiều quá trình huấn luyện.
 
-![Phép tích chập](/Asset/Image/Convolution_schematic.gif)
 
-![Công thức phép toán tích chập](/Asset/Image/convolution-calculating.webp)
 
    - *Max pooling (Quá trình tổng hợp, thủ tục tìm ra giá trị lớn nhất)*: Ngay sau lớp Convolution, Pooling layer có nhiệm vụ giảm kích thước khối ma trận đầu vào thông qua việc tìm ra một giá trị đại diện cho mỗi một vùng không gian mà filter đi qua sẽ không làm thay đổi các đường nét chính của bức ảnh nhưng lại giảm được kích thước của ảnh. (Pooling size: thường là 2x2 hoặc 4xx4 cho ảnh đầu vào lớn)
      - Trong một mạng CNN có nhiều Feature Map nên mỗi Feature Map chúng ta sẽ cho mỗi Max Pooling khác nhau. Chúng ta có thể thấy rằng Max Pooling là cách hỏi xem trong các đặc trưng này thì đặc trưng nào là đặc trưng nhất. Ngoài Max Pooling còn có L2 Pooling.
 
-![pooling layer](/Asset/Image/pooling-layer.png)
+
 
    - *Full connected (Quá trình kết nối hoàn toàn)*: Sau khi giảm kích thước đến một mức độ nhất định. ma trận cần được làm phẳng (flatten) thành một vector và sử dụng fully connected giữa các tầng. Fully connected layer sẽ có **số lượng đơn vị bằng với số lớp**.
 
@@ -138,7 +133,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 - Trong các mô hình mạng nơ-ron truyền thống, đầu vào và đầu ra độc lập với nhau, tuy nhiên **RNN thực hiện cùng một tác vụ cho tất cả phần tử của một chuỗi** với đầu ra phụ thuộc vào cả các phép tính trước đó. Vì vậy mạng **RNN có khả năng nhớ các thông tin được tính toán trước đó.**
 
 - Cách hoạt động của RNN: Quá trình xử lý dữ liệu, phân tích và dự đoán diễn ra trong **lớp ẩn**. 
-![Sơ đồ của RNN](/Asset/Image/rnn-schmatic.gif)
+
 
     - *Lớp ẩn:* RNN hoạt động bằng cách **truyền dữ liệu tuần tự nhận được đến các lớp ẩn**. Tuy nhiên, RNN cũng có quy trình làm việc **tự lặp lại** hay **hồi quy**: lớp ẩn có thể **ghi nhớ** và sử dụng các đầu vào trước đó cho các dự đoán trong tương lai trong một thành phần bộ nhớ ngắn hạn. Quy trình này sử dụng đầu vào hiện tại và bộ nhớ đã lưu trữ để dự đoán chuỗi tiếp theo.
 
@@ -148,7 +143,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
         - Cổng vào (Input): Quyết định thông tin mới nào cần được thêm vào bộ nhớ.
         - Cập nhật bộ nhớ (Cell State): Kết hợp thông tin cũ và thông tin mới để tạo ra bộ nhớ mới.
         - Cổng ra (Output): Quyết định thông tin nào từ bộ nhớ sẽ được sử dụng để tính toán trạng thái ẩn hiện tại.
-![LSTM Architecture](/Asset/Image/lstm-architecture.png)
+
 
     - *Gated recurrent units (GRUs)*: Cũng là một thiết kế phổ biến trong lĩnh vực dự đoán dữ liệu của chuỗi thời gian, có hai cổng là **Update và Reset.** Cách hoạt động:
         - Cổng đặt lại (Reset Gate): Quyết định mức độ sử dụng thông tin từ trạng thái ẩn trước đó.
@@ -179,7 +174,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
     - One to Many: Một input nhưng cho ra nhiều input, phổ biến là bài toán đặt caption cho ảnh.
     - Many to One: Nhiều input nhưng chỉ cho ra một Output, ví dụ phân loại cảm xúc.
     - Many to Many: Nhiêu input và nhiều output, chẳng hạn như phân loại video.
-![Các bài tóan RNN](/Asset/Image/rnn-math-problem.webp)
+
 
 ### Generative Adversarial Networks (GAN)
 
@@ -187,7 +182,7 @@ Là một lĩnh vực của Trí tuệ nhân tạo (AI), bắt chước cách ho
 
 - Đây là lớp mô hình có mục tiêu tạo ra dữ liệu giả giống dữ liệu thật, tên của mạng được dựa trên 2 mục tiêu đối nghịch nhau: Generator và Discriminator. Trong đó, Generator học cách sinh dữ liệu giả để lừa mô hình Discriminator, còn Discriminator lại học cách phân biệt giữa dữ liệu giả và dữ liệu thật.
 
-![GAN](/Asset/Image/GAN.webp)
+
 
 ### Boltzmann machine
 

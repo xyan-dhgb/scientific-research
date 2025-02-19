@@ -15,7 +15,7 @@
 
     + DL - `Deep Learning` hay Học sâu, là một nhánh nâng cao của `Machine Learning`, trong đó các thuật toán dựa trên **mạng nơ-ron nhân tạo**(Artificial Neural Networks - ANN) với nhiều lớp (do đó gọi là "deep" - sâu).
 
-    ![AI vs ML vs DL](/Asset/Image/Difference-of-AI-ML-DL.png)
+
 
 - So sánh cách thức hoạt động của `Machine Learning` và `Deep learning`:
 
@@ -33,7 +33,6 @@
 
         * `Deep Learning` hoạt động dộc lập cao hơn, dựa vào setup ban đầu và tự vận hành để tìm ra sáng kiến mới.
 
-    ![ML and DL](/Asset/Image/difference-of-ml-and-dl.webp)
 
 ## Phân nhóm các thuật toán Machine learning
 
@@ -104,7 +103,6 @@
 
 - `Centralized ML` (Tập trung): Triển khai tập trung là cách triển khai mô hình `Machine Learning` truyền thống, trong đó chúng ta đào tạo và cập nhật mô hình của mình trên server trung tâm hoặc nền tảng cloud, sau đó gửi dự đoán hoặc đề xuất đến người dùng cuối hoặc thiết bị.
 
-    ![Centralized ML deployment](/Asset/Image/centralized-machine-learning.png)>
 
 - **Ưu điểm**: 
 
@@ -124,7 +122,6 @@
 
 - `Decentralized ML` (Phi tập trung): Là một cách mới nổi để triển khai các mô hình `Machine Learning` theo cách **phân tán**, trong đó chúng ta phân phối đào tạo mô hình và suy luận trên nhiều thiết bị biên hoặc node, chẳng hạn như điện thoại thông minh, thiết bị IoT, ... mà không cần đến máy chủ tập trung.
 
-    ![Decentralized ML deployment](/Asset/Image/decentralized-machine-learning.png)
 
 - **Ưu điểm**:
     
@@ -150,7 +147,6 @@
 
 => Giúp bảo vệ quyền riêng tư và bảo mật dữ liệu.
 
-![Federated Learning](/Asset/Image/federated-machine-learning.png)
 
 - **Các đặc điểm chính**:
 
@@ -177,8 +173,6 @@
 - **Từ khóa**: "Decentralized + Collaborative"
 
 - **Định nghĩa**: `Swarm Learning` là một khái niệm tiên tiến hơn của `Decentralized ML`, trong đó các thiết bị hoặc node không chỉ huấn luyện mô hình cục bộ mà còn hợp tác và chia sẻ kết quả với nhau trực tiếp, không cần đến một server nào cả. Thay vào đó, chúng hợp tác và ra quyết định dựa trên mạng blockchain-based peer-to-peer, điện toán biên (edge computing), đảm bảo tính minh bạch và bảo mật cao hơn.
-
-![Swarm Learning](/Asset/Image/swarm-machine-learning.webp)
 
 - Về bản chất, `Federated Learning` và `Swarm Learning` đều thuộc `Decentralized ML`, nhưng chúng khác nhau ở cách thức các node trong hệ thống giao tiếp và hợp tác với nhau.
 
