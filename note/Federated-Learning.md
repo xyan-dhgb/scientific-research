@@ -10,6 +10,18 @@ Federated Learning (FL) is a distributed artificial intelligence (AI) approach t
 
 ## Features of FL
 
+Federated Learning (FL) has several key features that make it attractive for smart healthcare, especially in scenarios where data privacy is a concern. Here's a breakdown of these features:
+
+- Data Privacy Improvement: FL allows local health data to remain at local medical sites and devices, with only local updates, such as model gradients, being required by the central server for AI training. This reduces the risk of sensitive user information being leaked to external third parties, thus providing a higher degree of user privacy.
+
+- Trade-off between Accuracy and Utility: FL offers a balance between accuracy, utility, and privacy. While it retains model generalizability, it may result in a nominal accuracy loss compared to conventional centralized learning.
+
+- Low-Cost Health Data Training: FL can significantly reduce communication costs, such as latency and transmit power, by avoiding the transfer of large data volumes to the server. Model gradients are generally smaller in size compared to actual datasets, which saves network bandwidth and reduces the possibility of network congestion in large healthcare networks.
+
+- Three main categories of FL: Horizontal Federated Learning (HFL), Vertical Federated Learning (VFL), and Federated Transfer Learning (FTL).
+
+Despite these benefits, it is important to note that FL does not fully address the privacy problem in smart healthcare and dedicated privacy protection mechanisms may be needed to enhance FL in healthcare networks
+
 ## How does it work?
 
 ## How many types of FL?
