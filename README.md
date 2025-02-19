@@ -61,3 +61,47 @@ Nếu bạn có bất kỳ câu hỏi nào về dự án, vui lòng liên hệ v
 
 ## License
 Dự án này sử dụng giấy phép Apache License 2.0. Xem thêm chi tiết tại file LICENSE.
+
+
+```mermaid
+flowchart TD
+    subgraph Client_1[Client 1 - Hospital A]
+        C1_I[Image Data] & C1_T[Text Data] --> C1_P[Local Preprocessing]
+        C1_P --> C1_F[Feature Extraction]
+        C1_F --> C1_M[Local Multimodal Model]
+        C1_M --> C1_T1[Local Training]
+    end
+
+    subgraph Client_2[Client 2 - Hospital B]
+        C2_I[Image Data] & C2_T[Text Data] --> C2_P[Local Preprocessing]
+        C2_P --> C2_F[Feature Extraction]
+        C2_F --> C2_M[Local Multimodal Model]
+        C2_M --> C2_T1[Local Training]
+    end
+
+    subgraph Client_N[Client N - Hospital N]
+        CN_I[Image Data] & CN_T[Text Data] --> CN_P[Local Preprocessing]
+        CN_P --> CN_F[Feature Extraction]
+        CN_F --> CN_M[Local Multimodal Model]
+        CN_M --> CN_T1[Local Training]
+    end
+
+    subgraph Server[Federated Server]
+        MA[Model Aggregation - FedAvg] --> GM[Global Model Update]
+        GM --> QC[Quality Control]
+    end
+
+    subgraph Security[Security Layer]
+        E[Encryption]
+        DP[Differential Privacy]
+        Auth[Authentication]
+    end
+
+    C1_T1 --> Security
+    C2_T1 --> Security
+    CN_T1 --> Security
+    Security --> Server
+    QC --> Client_1
+    QC --> Client_2
+    QC --> Client_N
+```
