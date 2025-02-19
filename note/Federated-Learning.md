@@ -24,6 +24,14 @@ Despite these benefits, it is important to note that FL does not fully address t
 
 ## How does it work?
 
+The federated learning (FL) process for smart healthcare involves several key steps:
+
+1. **System Initialization and Client Selection**: The aggregation server selects a healthcare analytic task, like medical imaging or human motion detection. It also determines model requirements, such as task classification or prediction, and learning parameters like neural node numbers and learning rates. A subset of clients (e.g., hospitals) is chosen to participate in the FL process.
+
+2. **Distributed Local Training and Updates**: The server sends an initial model, including a global gradient, to the selected clients, triggering distributed training. In each communication round, each client trains a local model using its own dataset and calculates its model update, such as the gradient in neural networks. The client then uploads its model update to the server.
+
+3. **Model Aggregation and Download**: The server aggregates the updates received from the selected clients using an aggregation method such as the Federated Averaging (FedAvg) algorithm. In FedAvg, the gradient parameters of local models are averaged element-wise with weights proportional to the sizes of the client datasets. The server then calculates a new version of the global model and broadcasts it to all clients as the basis for further local model updates in the next learning round. The FL process iterates until the global loss function converges
+
 ## How many types of FL?
 
 In the context of federated learning (FL) for smart healthcare, there are **three main types of FL** described: **Horizontal FL (HFL)**, **Vertical FL (VFL)**, and **Federated Transfer Learning (FTL)**.
