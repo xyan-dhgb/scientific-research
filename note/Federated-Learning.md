@@ -124,7 +124,6 @@ By adopting these advanced FL designs, smart healthcare systems can achieve effi
 Artificial Intelligence - Federated Learning - Smart healthcare
 
 ## Glossary
-# Glossary (Thuật ngữ)
 
 | **Term** | **Definition** | **Translation (Tiếng Việt)** |
 |----------|--------------|---------------------------|
