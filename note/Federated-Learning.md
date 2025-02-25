@@ -121,3 +121,4 @@ By adopting these advanced FL designs, smart healthcare systems can achieve effi
 ---
 
 ## Keyword
+Artificial Intelligence - Federated Learning - Smart healthcare
