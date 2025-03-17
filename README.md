@@ -1,8 +1,13 @@
-# NGHIÊN CỨU KHOA HỌC - TÌM HIỂU CƠ BẢN VỀ TRÍ TUỆ NHÂN TẠO (ARTIFICIAL INTELLIGENCE- AI), HỌC MÁY (MACHINE LEARNING - ML) VÀ HỌC SÂU (DEEP LEARNING)
+# NGHIÊN CỨU KHOA HỌC
+
+- Tên đề tài tiếng Việt: ỨNG DỤNG PHƯƠNG PHÁP HỌC LIÊN KẾT KẾT HỢP VỚI TRÍ TUỆ NHÂN TẠO ĐA THỂ THỨC ĐỂ CHUẨN ĐOÁN BỆNH UNG THƯ TRONG Y HỌC
+
+- Tên đề tài tiếng Anh: APPLYING FEDERATED LEARNING AND MULTIMODAL ARTIFICIAL INTELLIGENCE TO CANCER DIAGNOSIS IN MEDICAL SCIENCE
+
 
 ## Giới thiệu
 
-Repo này tập trung vào nghiên cứu cơ bản AI, ML và cách thức triển khai. Mục tiêu chính của dự án là tạo hệ thống dự đoán bệnh trong SmartHealth (y tế thông minh). Chúng tôi sử dụng các công nghệ đám mây (trong quá trình thực hiện sẽ phát sinh các công nghệ mới), ngôn ngữ lập trình Python và thư viện liên quan để thực hiện các phân tích và thử nghiệm hệ thống.
+Repo này tập trung vào nghiên cứu cơ bản AI, ML và cách thức triển khai. Mục tiêu chính của dự án là tạo hệ thống dự đoán bệnh trong SmartHealth (y tế thông minh). Chúng tôi sử dụng các công nghệ đám mây (trong quá trình thực hiện sẽ phát sinh các công nghệ mới), ngôn ngữ lập trình Python và thư viện, framework liên quan để thực hiện các phân tích và thử nghiệm hệ thống.
 
 ## Mục tiêu
 - Xác định được bài toán và phương pháp thực hiện nhằm phục vụ cho Đồ án chuyên ngành (NT114) và Khóa luận tốt nghiệp (NT505).
@@ -56,19 +61,14 @@ flowchart TD
 
 ## Cấu trúc dự án
 
-
-```
-📂 Asset
- ├── 📂 Image
- ├── 📂 SVG
-📂 Note
- ├── 📂 Documentation
-📂 Paper
-📂 Report
-📂 Task
-📄 .gitignore
-📄 LICENSE
-📄 README.md
+```bash
+├── .gitignore # Tệp cấu hình của Git
+├── LICENSE # Thông tin giấy phép sử dụng
+├── README.md # Mô tả nội dung của repository
+├── asset # Thư mục chứa tài nguyên
+├── data # Thư mục chứa dataset
+├── note # Thư mục chứa ghi chú 
+└── paper # Thư mục chứa các bài báo nghiên cứu 
 ```
 
 ## Cách cài đặt và sử dụng
@@ -79,7 +79,9 @@ flowchart TD
 # Clone repo
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
+```
 
+```bash
 # Cài đặt các thư viện cần thiết
 [Update later]
 ```
@@ -105,6 +107,4 @@ cd your-repo
 Nếu bạn có bất kỳ câu hỏi nào về dự án, vui lòng liên hệ với chúng tôi qua một trong các email trên hoặc tạo issue trên GitHub.
 
 ## License
-Dự án này sử dụng giấy phép Apache License 2.0. Xem thêm chi tiết tại file LICENSE.
-
-
+Dự án này sử dụng giấy phép Apache License 2.0. Xem thêm chi tiết tại file [LICENSE](/LICENSE).
