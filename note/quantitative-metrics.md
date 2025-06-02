@@ -37,7 +37,7 @@
 > Accuracy = TP + TN / TP + TN + FP + FN
 
 > ![NOTE]
-> % dự đoán đúng
+% dự đoán đúng
 
 ### Precision
 
@@ -48,7 +48,7 @@
 > Precision = TP / TP + FP
 
 > ![NOTE]
-> Dự đoán đúng trong số dự đoán là ung thư
+Dự đoán đúng trong số dự đoán là ung thư
 
 ### Recall
 
@@ -59,7 +59,7 @@
 >  Recall = TP / TP + FN
 
 > ![NOTE]
-> Bắt được bao nhiêu ca ung thư thực sự
+Bắt được bao nhiêu ca ung thư thực sự
 
 ### F1-score
 
@@ -70,7 +70,7 @@
 > F1  = (1+B^2) * ((precision * recall) / (B^2 * precision + recall))
 
 > ![NOTE]
-> Dữ liệu mất cân bằng
+Dữ liệu mất cân bằng
 
 ### ROC (Receiver Operating Characteristic)
 
