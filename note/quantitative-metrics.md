@@ -113,3 +113,41 @@
 | 0.7+ | Trung bình       |
 | 0.5  | Đoán ngẫu nhiên  |
 | <0.5 | Tệ hơn đoán bừa   |
+
+## Chỉ số hiệu năng FL (Federated System Performance)
+
+- Nhóm này đánh giá độ trễ, khả năng mở rộng và tính thực tiễn của hệ thống phân tán.
+
+- Bảng tổng hợp
+
+| Chỉ số                           | Ý nghĩa                                                     | Cách đo                          |
+| -------------------------------- | ----------------------------------------------------------- | -------------------------------- |
+| **Communication latency**        | Thời gian gửi/nhận model giữa client & server trong 1 round | `time.time()` trước/sau mỗi vòng |
+| **Training time per client**     | Thời gian train nội bộ trên mỗi client                      | `time()` đo từng client          |
+| **Aggregation time**             | Thời gian server tổng hợp các model client                  | `time()` trong server            |
+
+## Chỉ số về kích thước và tải mô hình (Model Size & Bandwidth)
+
+| Chỉ số                          | Mục tiêu                                        | Mối quan hệ                         |
+| ------------------------------- | ----------------------------------------------- | ----------------------------------- |
+| **Model size (KB/MB)**          | Kích thước mô hình gửi đi giữa client và server | Tỷ lệ thuận với băng thông tiêu tốn |
+| **Bandwidth usage**             | Dung lượng truyền qua mạng mỗi round            | ≈ model size x số client            |
+
+## Chỉ số về tính riêng tư và độ tin cậy (Privacy & Robustness) (Tùy chọn)
+
+-  Nhấn mạnh lý do dùng FL thay vì Centralized Learning.
+
+| Chỉ số / Thuộc tính                  | Ghi chú                                       | Định lượng                                                |
+| ------------------------------------ | --------------------------------------------- | --------------------------------------------------------- |
+| **Khả năng phục hồi khi mất client** | Server vẫn tổng hợp mô hình nếu 1 client down | Mô tả qualitative                                         |
+| **Reproducibility**                  | Các round có deterministic nếu seed cố định   | Có thể kiểm tra bằng log                                  |
+| **Privacy by design**                | Không gửi dữ liệu gốc, chỉ gửi model          | Đưa vào phần lý thuyết chứ không cần code test            |
+| **Attack resistance**                | Kháng mô hình giả mạo, poisoning attack       | Nếu đồ án nâng cao, thử nghiệm FedProx hoặc robust FedAvg |
+
+## Tổng hợp
+
+| **Nhóm tiêu chí**                     | **Chỉ số cần đánh giá**                                                                        | **Lý do cần thiết**                                                                      |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+|  **Hiệu quả mô hình (core ML)**     | - Accuracy<br>- Precision<br>- Recall<br>- F1-score<br>- AUC/ROC                               | Đánh giá mô hình có học hiệu quả và phân biệt đúng không. Bắt buộc trong mọi báo cáo AI. |
+|  **Hiệu quả huấn luyện FL**         | - Số vòng (rounds) đến hội tụ<br>- Accuracy theo từng round<br>- Thời gian huấn luyện mỗi vòng | Kiểm tra xem FL có học ổn định, đủ nhanh và tiết kiệm tài nguyên không.                  |
+|  **Hiệu suất truyền thông (Comm.)** | - Độ trễ (latency)<br>- Kích thước mô hình truyền mỗi vòng<br>- Tổng số byte truyền qua mạng   | Rất quan trọng với FL – mô hình truyền qua mạng, cần tối ưu băng thông.                  |
