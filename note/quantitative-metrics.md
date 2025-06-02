@@ -61,6 +61,8 @@
 > [!NOTE]
 > Bắt được bao nhiêu ca ung thư thực sự
 
+- Recall quan trọng hơn Precision Vì mục đích đưa ra không muốn bỏ sót người bệnh. **Thà báo nhầm còn hơn để sót.**
+
 ### F1-score
 
 - F1-score là chỉ số tổng hợp giữa Precision và Recall, được thiết kế để cân bằng giữa 2 yếu tố này.
