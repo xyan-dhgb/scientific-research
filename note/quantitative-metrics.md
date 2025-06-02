@@ -76,6 +76,8 @@
 > [!NOTE]
 > Dữ liệu mất cân bằng
 
+- Dữ liệu mất cân bằng là sự phân bổ các mẫu trên các class - label **chênh lệch quá lớn** dẫn tới việc mô hình tập trung chỉ học những đặc trưng của class có nhiều data, không khái quát được toàn bộ mẫu.
+
 ### ROC (Receiver Operating Characteristic)
 
 - Là một đồ thị thể hiện hiệu suất của một mô hình phân loại ở tất cả các ngưỡng phân loại.
