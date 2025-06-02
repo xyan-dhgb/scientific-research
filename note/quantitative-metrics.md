@@ -71,6 +71,8 @@
 
 > F1  = (1+B^2) * ((precision * recall) / (B^2 * precision + recall))
 
+-  F1 chính là một trường hợp đặc biệt của Fg khi B = 1. Khi B > 1, recall được coi trọng hơn precision, khi B < 1, precision được coi trọng hơn. Hai đại lượng B thường được sử dụng là B = 2 và B = 0.5.
+
 > [!NOTE]
 > Dữ liệu mất cân bằng
 
